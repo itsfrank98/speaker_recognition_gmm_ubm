@@ -1,7 +1,7 @@
 # speaker_recognition_gmm_ubm
 A system that adopts GMM_UBM to recognize a speaker. Tested on imitations
 
-#Description
+# Description
 This Python system implements a GMM_UBM approach to model its speakers. Its aim is to distinguish between a genuine speaker and an imitator of his voice. It's tested 
 on a dataset of italian voices that I created. The process is:
 1. Preprocessing: The audios are downsampled to 8kHz, converted to wav in case they aren't in this format and chunked in pieces 20 seconds long
@@ -20,25 +20,25 @@ reduced them to be less than 1000 or the training would have took a lot of time.
 
 The results are in the results/plots folder, and were pretty good but we have to consider the small size of the dataset.
 
-##Dataset structure
+## Dataset structure
 The dataset has this structure: <br>
-|-- dataset
-|    |-- enroll
-|    |      |-- genuine
-|    |      |-- impostors
-|    |-- test_1s
-|    |      |-- attacks
-|    |      |-- genuine
-|    |      |-- impostors
-|    |-- test_5s
-|    |      |-- attacks
-|    |      |-- genuine
-|    |      |-- impostors
-|    |-- test_20s
-|    |      |-- attacks
-|    |      |-- genuine
-|    |      |-- impostors
-|    |-- ubm
+|-- dataset <br>
+|    |-- enroll<br>
+|    |      |-- genuine<br>
+|    |      |-- impostors<br>
+|    |-- test_1s<br>
+|    |      |-- attacks<br>
+|    |      |-- genuine<br>
+|    |      |-- impostors<br>
+|    |-- test_5s<br>
+|    |      |-- attacks<br>
+|    |      |-- genuine<br>
+|    |      |-- impostors<br>
+|    |-- test_20s<br>
+|    |      |-- attacks<br>
+|    |      |-- genuine<br>
+|    |      |-- impostors<br>
+|    |-- ubm<br>
 
 **The audio names structure is the following:**
 * For files in the enroll folders:  ENROLL_SpeakerName_ChunkNumber.wav (for example: ENROLL_Amadeus_1.wav for speaker Amadeus)
@@ -46,7 +46,7 @@ The dataset has this structure: <br>
 * For files in the attacks folder: ImitatorName_GenuineSpeakerName_ChunkNumber.wav (for example, for the first audio in which the speaker "Fiorello" imitates speaker 
  "Bongiorno" the audios name are: Fiorello_Bongiorno_1.wav)
  
-##Requirements:
+## Requirements:
 The following Python libraries were used:
 * librosa~=0.7.2
 * matplotlib~=3.2.2
@@ -65,7 +65,7 @@ The following Python libraries were used:
 Python may ask you to install other dependencies if you don't have them.
 
 
-##Credits:
+## Credits:
 * The features extraction, UBM training and part of the final testing were done by adapting the code provided by @abhijeet3922. The code is [here](https://github.com/abhijeet3922/Speaker-identification-using-GMMs), and it's discussed in his blog [here](https://appliedmachinelearning.blog/2017/11/14/spoken-speaker-identification-based-on-gaussian-mixture-models-python-implementation/).
 * The MAP adaptation for the speakers models was done by using part of the code provided by @scelesticsiva in [this file](https://github.com/scelesticsiva/speaker_recognition_GMM_UBM/blob/master/src/speaker_recognition/MAP_adapt.py).
 
