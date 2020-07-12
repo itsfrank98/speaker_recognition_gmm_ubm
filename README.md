@@ -43,8 +43,7 @@ The dataset has this structure: <br>
 **The audio names structure is the following:**
 * For files in the enroll folders:  ENROLL_SpeakerName_ChunkNumber.wav (for example: ENROLL_Amadeus_1.wav for speaker Amadeus)
 * For files in test folders (but **NOT** the "attacks" folder): TEST_SpeakerName_ChunkNumber.wav (for example: TEST_Amadeus_1.wav for speaker Amadeus)
-* For files in the attacks folder: ImitatorName_GenuineSpeakerName_ChunkNumber.wav (for example, for the first audio in which the speaker "Fiorello" imitates speaker 
- "Bongiorno" the audios name are: Fiorello_Bongiorno_1.wav)
+* For files in the attacks folder: TEST_ImitatorName_GenuineSpeakerName_ChunkNumber.wav (for example, for the first audio in which the speaker "Fiorello" imitates speaker "Bongiorno" the audios name are: TEST_Fiorello_Bongiorno_1.wav)
  
 ## Requirements:
 The following Python libraries were used:
