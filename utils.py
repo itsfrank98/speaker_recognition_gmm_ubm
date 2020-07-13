@@ -87,12 +87,12 @@ def split_audios(chunk_size, src_directory, dst_directory):
   
 if __name__ == "__main__":
     #### RESAMPLE THE AUDIOS TO 8KHz FREQUENCY ####
-    """resample("dataset/enroll/genuine", 8000)
+    resample("dataset/enroll/genuine", 8000)
     resample("dataset/enroll/impostors", 8000)
     resample("dataset/test/genuine", 8000)
     resample("dataset/test/impostors", 8000)
     resample("dataset/ubm", 8000)
-    resample("dataset/test/attacks", 8000)"""
+    resample("dataset/test/attacks", 8000)
     
     #### CHUNK THE TEST AUDIOS ####
     split_audios(1000, os.path.join("dataset", "test", "attacks"), os.path.join("test_1s", "attacks"))
