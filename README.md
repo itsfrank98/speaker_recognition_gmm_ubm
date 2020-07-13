@@ -29,11 +29,11 @@ The dataset has this structure: <br>
 |    |      |-- attacks
 |    |      |-- genuine
 |    |      |-- impostors
-|    |-- test_5s<br>
+|    |-- test_5s
 |    |      |-- attacks
 |    |      |-- genuine
 |    |      |-- impostors
-|    |-- test_20s<br>
+|    |-- test_20s
 |    |      |-- attacks
 |    |      |-- genuine
 |    |      |-- impostors
