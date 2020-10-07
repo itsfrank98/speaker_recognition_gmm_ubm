@@ -5,7 +5,7 @@ A system that adopts GMM_UBM to recognize a speaker. Tested on imitations
 This Python system implements a GMM_UBM approach to model its speakers. Its aim is to distinguish between a genuine speaker and an attacker who imitates his voice to fraud the system. It's tested on a dataset of italian voices that I created. The process consists of the following steps:
 1. **Preprocessing**: The audios are downsampled to 8kHz, converted to Mono and converted to wav in case they aren't in this format and chunked in pieces 20 seconds long
 2. **Features extraction** for both the model audios and the UBM audios
-3. **UBM training**. The datas for the UBM training were downloaded from here --> https://voice.mozilla.org/it/datasets. I used the italian dataset, that contains more than 80k files. I reduced them to be less than 1000 or the training phase would have took much more time (it took 2 hours with 803 files). The training of the UBM model was done using thr Google Colab notebook.
+3. **UBM training**. The datas for the UBM training were downloaded from here --> https://voice.mozilla.org/it/datasets. I used the italian dataset, that contains more than 80k files. I reduced them to be less than 1000 or the training phase would have took much more time (it took 2 hours with 803 files). The training of the UBM model was done using Google Colab notebook.
 4. **Model training** using MAP adaptation from the UBM.
 5. **Testing**: The testing consisted in three phases:
   1. In the first case, we assume that the system only knows the genuine speakers, and is tested only on the audios belonging to them. 
